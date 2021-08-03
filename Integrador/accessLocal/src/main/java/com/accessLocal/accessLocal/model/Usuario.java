@@ -34,7 +34,10 @@ public class Usuario {
 	@NotBlank
 	@Size(min = 5 , max = 1000)
 	private String senhaUsuario;
-
+	
+	
+	
+	
 	public long getIdUsuario() {
 		return id;
 	}

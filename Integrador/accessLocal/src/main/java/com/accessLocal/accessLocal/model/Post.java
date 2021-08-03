@@ -8,6 +8,8 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import org.hibernate.annotations.BatchSize;
+
 @Entity
 @Table(name = "Post")
 public class Post {
@@ -25,7 +27,7 @@ public class Post {
 	private String tipoEstabelecimento;
 	
 	@NotNull
-	@Size(min = 1, max = 1)
+	@BatchSize(size= 1)
 	private int avalicao;
 	
 	@NotNull
